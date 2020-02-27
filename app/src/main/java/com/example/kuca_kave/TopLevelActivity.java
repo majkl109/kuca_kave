@@ -14,7 +14,6 @@ public class TopLevelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_level);
-    }
 
     AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
         @Override
@@ -28,4 +27,5 @@ public class TopLevelActivity extends AppCompatActivity {
     };
     ListView listView = findViewById(R.id.list_options);
     listView.setOnItemClickListener(itemClickListener);
+  }
 }
