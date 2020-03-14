@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class FoodActivity extends AppCompatActivity {
 
+    public static final String EXTRA_FOOD_ID = "foodId";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,7 @@ public class FoodActivity extends AppCompatActivity {
         description.setText(food.getDescription());
 
         ImageView photo = findViewById(R.id.photo);
-        photo.setImageResource(food.getImageResourceId());
+        photo.setImageResource(food.getImageResourceID());
         photo.setContentDescription(food.getName());
     }
 

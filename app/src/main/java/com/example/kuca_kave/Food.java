@@ -6,7 +6,7 @@ public class Food {
     private String description;
     private int  imageResourceID;
 
-    private static final Food[] foods = {
+    public static final Food[] foods = {
 
             new Food("Sandwich", "Sandwich sa jajetom, avokadom i tofuom", R.drawable.sandwich),
             new Food("Torta", "Torta sa crnom mousse kremom", R.drawable.chocolate_cake),
