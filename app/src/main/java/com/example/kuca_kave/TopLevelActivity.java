@@ -20,7 +20,7 @@ public class TopLevelActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             if (position == 0) {
-                Intent intent = new Intent(TopLevelActivity.this, DrinkCategoryActivity.class);
+                Intent intent = new Intent(TopLevelActivity.this, FoodCategoryActivity.class);
                 startActivity(intent);
             }
         }
