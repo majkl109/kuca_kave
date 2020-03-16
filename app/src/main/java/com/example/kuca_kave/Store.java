@@ -8,9 +8,9 @@ public class Store {
 
     public static final Coffee[] coffees = {
 
-            new Coffee("Brazil", "Brazilska kava", R.drawable.brazil),
-            new Coffee("Columbia", "Kolumbjska kava", R.drawable.colombia),
-            new Coffee("Africa", "Afrička kava iz više država", R.drawable.africa)
+            new Coffee("Brazil", "Brazilska kava", R.drawable.brasilian_coffee),
+            new Coffee("Columbia", "Kolumbjska kava", R.drawable.colombian_coffee),
+            new Coffee("Africa", "Afrička kava iz više država", R.drawable.african_coffee)
     };
 
     public Store(String coffeeName, String description, int imageResourceID) {
