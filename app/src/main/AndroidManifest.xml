@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".FoodActivity"/>
-        <activity android:name=".FoodCategoryActivity"/>
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".FoodCategoryActivity" />
         <activity android:name=".DrinkActivity" />
         <activity android:name=".DrinkCategoryActivity" />
         <activity android:name=".TopLevelActivity">
