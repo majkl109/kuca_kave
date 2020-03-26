@@ -6,11 +6,11 @@ public class Store {
     private String description;
     private int  imageResourceID;
 
-    public static final Coffee[] coffees = {
+    public static final Store[] coffees = {
 
-            new Coffee("Brazil", "Brazilska kava", R.drawable.brasilian_coffee),
-            new Coffee("Columbia", "Kolumbjska kava", R.drawable.colombian_coffee),
-            new Coffee("Africa", "Afrička kava iz više država", R.drawable.african_coffee)
+            new Store("Brazil", "Brazilska kava", R.drawable.brasilian_coffee),
+            new Store("Columbia", "Kolumbjska kava", R.drawable.colombian_coffee),
+            new Store("Africa", "Afrička kava iz više država", R.drawable.african_coffee)
     };
 
     public Store(String coffeeName, String description, int imageResourceID) {

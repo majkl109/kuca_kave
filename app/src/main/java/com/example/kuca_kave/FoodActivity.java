@@ -1,15 +1,44 @@
 package com.example.kuca_kave;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
-public class FoodActivity extends AppCompatActivity {
+public class FoodActivity extends Fragment {
 
+    private FragmentListener listener;
+    private TextView textName;
+    private TextView textDescription;
+    private ImageView imagePhoto;
+
+
+    public interface FragmentListener{
+        void onInputASent(CharSequence input);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        //return super.onCreateView(inflater, container, savedInstanceState);
+        View v = inflater.inflate(R.layout.activity_food, container,false);
+
+        textName = v.findViewById(R.id.name);
+        textDescription = v.findViewById(R.id.description);
+        imagePhoto = v.findViewById(R.id.photo);
+
+        return v;
+    }
+
+    /*
     public static final String EXTRA_FOOD_ID = "foodId";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +59,5 @@ public class FoodActivity extends AppCompatActivity {
         photo.setContentDescription(food.getName());
     }
 
-
+*/
 }
