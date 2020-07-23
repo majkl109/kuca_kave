@@ -37,11 +37,11 @@ public class FoodActivity extends Fragment {
         return v;
     }
 
-    /*
+
     public static final String EXTRA_FOOD_ID = "foodId";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
 
@@ -59,5 +59,5 @@ public class FoodActivity extends Fragment {
         photo.setContentDescription(food.getName());
     }
 
-*/
+
 }
