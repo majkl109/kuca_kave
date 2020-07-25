@@ -15,6 +15,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db){
+        db.execSQL("CREATE TABLE DRINK (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "NAME TEXT,"
+                + "DESCRIPTION TEXT, "
+                + "IMAGE_RESOURCE_ID INTEGER);");
+        insertDRINK(db, "Latte", "Espresso i vruce mlijeko", R.drawable.latte);
+        insertDRINK(db, "Cappuccino", "Espresso,vruce mlijeko i mlijecna pjena", R.drawable.cappucino);
+        insertDRINK(db, "Espresso", "Espresso kava", R.drawable.espresso);
 
     }
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
